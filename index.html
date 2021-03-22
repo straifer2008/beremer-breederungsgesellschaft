@@ -22,39 +22,48 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body class="body">
 
-<main class="main">
-  <header class="header">
-    <div class="header_bgSlider" id="TopSlider">
-      <img src="./src/img/top-slider/BBG_START1_NETZEND_1.jpeg" alt="1">
-      <img src="./src/img/top-slider/BBG-START2-Maura-Satui_Indonesia-NETZEND_2.jpeg" alt="1">
-      <img src="./src/img/top-slider/BBG-START3-MV-TOPAS-NETZEND_0.jpeg" alt="1">
-      <img src="./src/img/top-slider/BBG-START4-Nautical-Hilary-Pacific-Sunset_NETZEND.jpeg" alt="1">
-    </div>
-
-    <div class="header_content">
-      <img src="./src/img/logo_bbg_0.png" alt="logo" class="header_content__logo">
-      <h1 class="header_content__title">Beremer breederungsgesellschaft</h1>
-    </div>
-  </header>
-
-  <div class="nav">
-    <div class="nav_container">
-      <img src="./src/img/logo_bbg_0.png" alt="logo" class="nav_logo">
-      <nav>
-        <a href="#">Про нас</a>
-        <a href="#">Наші послуги</a>
-        <a href="#">Флот</a>
-        <a href="#">Команда</a>
-        <a href="#">Новини</a>
-        <a href="#">Вакансії</a>
-        <a href="#">Партнери</a>
-        <a href="#">Контакти</a>
-      </nav>
-    </div>
+<header class="header">
+  <div class="header_bgSlider" id="TopSlider">
+    <img src="./src/img/top-slider/BBG_START1_NETZEND_1.jpeg" alt="1">
+    <img src="./src/img/top-slider/BBG-START2-Maura-Satui_Indonesia-NETZEND_2.jpeg" alt="1">
+    <img src="./src/img/top-slider/BBG-START3-MV-TOPAS-NETZEND_0.jpeg" alt="1">
+    <img src="./src/img/top-slider/BBG-START4-Nautical-Hilary-Pacific-Sunset_NETZEND.jpeg" alt="1">
   </div>
 
+  <div class="header_content">
+    <img src="./src/img/logo_bbg_0.png" alt="logo" class="header_content__logo">
+    <h1 class="header_content__title">Beremer breederungsgesellschaft</h1>
+  </div>
+</header>
+
+<div class="nav">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./src/img/logo_bbg_0.png" alt="logo" class="nav_logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a href="#AboutUs">Про нас</a>
+          <a href="#OurServices">Наші послуги</a>
+          <a href="#OurFleet">Флот</a>
+          <a href="#OurTeam">Команда</a>
+          <a href="#OurNews">Новини</a>
+          <a href="#OurJobs">Вакансії</a>
+          <a href="#OurPartners">Партнери</a>
+          <a href="#OurContacts">Контакти</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<main class="main">
   <section class="section aboutUs" id="AboutUs">
     <img class="aboutUs_map" src="./src/img/BBG_Weltkarte_Standorte_0119_deutsch_web.jpeg" alt="map">
     <div class="container aboutUs_content">
@@ -122,7 +131,7 @@
     </div>
   </section>
 
-  <section class="section shipDrive">
+  <section class="section shipDrive" id="OurServices">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -164,18 +173,1963 @@
     <h5 class="title title-orange">ДЛЯ НАШОГО КЛІЄНТА</h5>
   </section>
 
-  <div class="section section ourFleet">
+  <section class="section section ourFleet py-5" id="OurFleet">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <h4 class="title">Наш флот</h4>
         </div>
       </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="accordion" id="fleetAccordion">
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <table class="table table-responsive">
+                  <tr class="ourFleet_head">
+                    <th>НАЗВА</th>
+                    <th>ТИП</th>
+                    <th>МОЖЛИВОСТЬ</th>
+                    <th>DWT</th>
+                    <th>РІК БУДІВНИЦТВА</th>
+                    <th>ДЕТАЛІ</th>
+                  </tr>
+                  <tr>
+                    <td>MV Eastern Edelweiss</td>
+                    <td>Supramax BC</td>
+                    <td>71.500 m³</td>
+                    <td>57.000 mts</td>
+                    <td>2012</td>
+                    <td>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Деталі
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#fleetAccordion">
+                <div class="accordion-body">
+                  <article class="row">
+                    <div class="col-8">
+                      <div class="row ourFleet_bgGrey">
+                        <div class="col-md-3 flot1">Owner</div>
+
+                        <div class="col-md-9 flot2">Yangze Lionet Shipping PTE Ltd.</div>
+
+                        <div class="col-md-3 flot3">Yard</div>
+
+                        <div class="col-md-9 flot4">Jiangsu Hantong Shipyard, China</div>
+
+                        <div class="col-md-3 flot1">Flag</div>
+
+                        <div class="col-md-9 flot2">Portugal</div>
+
+                        <div class="col-md-3 flot3">Call Sign</div>
+
+                        <div class="col-md-9 flot4">9HA3498</div>
+
+                        <div class="col-md-3 flot1">Class</div>
+
+                        <div class="col-md-9 flot2">Lloyd's Register</div>
+
+                        <div class="col-md-3 flot3">IMO No.</div>
+
+                        <div class="col-md-9 flot4">95 516 86</div>
+
+                        <div class="col-md-3 flot1">LOA/LBP/Breadth</div>
+
+                        <div class="col-md-9 flot2">189,99 m / 185,00 m / 32,26 m</div>
+
+                        <div class="col-md-3 flot3">Draft design</div>
+
+                        <div class="col-md-9 flot4">11,30 m</div>
+
+                        <div class="col-md-3 flot1">Draft scantl.</div>
+
+                        <div class="col-md-9 flot2">12,80 m</div>
+
+                        <div class="col-md-3 flot3">Height</div>
+
+                        <div class="col-md-9 flot4">abt. 45,95</div>
+
+                        <div class="col-md-3 flot1">Engine</div>
+
+                        <div class="col-md-9 flot2">MAN B&amp;W 6S50MC-C (MARK 7) CSR (90%MCR) 8.532 KW at 122,6 rpm</div>
+
+                        <div class="col-md-3 flot3">Cruising</div>
+
+                        <div class="col-md-9 flot4">About 18.000 nm</div>
+
+                        <div class="col-md-3 flot1">Speed</div>
+
+                        <div class="col-md-9 flot2">About 14,2 kn</div>
+
+                        <div class="col-md-3 flot3">Consumption</div>
+
+                        <div class="col-md-9 flot4">@ 14,2 kn/ 8.532 KW about 32,0 t/day (Ballast)</div>
+
+                        <div class="col-md-3 flot1">Tonnage</div>
+
+                        <div class="col-md-9 flot2">intern. GT about 32.300 t / intern. about 18.700 t</div>
+
+                        <div class="col-md-3 flot3">Cargo Hold</div>
+
+                        <div class="col-md-9 flot4">Grain: about 71.500 m3</div>
+
+                        <div class="col-md-3 flot1">Tank top strength</div>
+
+                        <div class="col-md-9 flot2">Hold 1,3, 5: 25 t/m2 Hold 2, 4: 18 t/m2</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 bbgimg">
+                      <img class="ourFleet_image" src="./src/img/fleet/1.jpeg" alt="1">
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <table class="table table-responsive">
+                  <tr class="ourFleet_head">
+                    <th>НАЗВА</th>
+                    <th>ТИП</th>
+                    <th>МОЖЛИВОСТЬ</th>
+                    <th>DWT</th>
+                    <th>РІК БУДІВНИЦТВА</th>
+                    <th>ДЕТАЛІ</th>
+                  </tr>
+                  <tr>
+                    <td>MV Nautical Hilary</td>
+                    <td>Ultramax BC</td>
+                    <td>78.500 m³</td>
+                    <td>63530.4 mts</td>
+                    <td>2015</td>
+                    <td>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                        Деталі
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne2" data-bs-parent="#fleetAccordion">
+                <div class="accordion-body">
+                  <article class="row">
+                    <div class="col-8">
+                      <div class="row ourFleet_bgGrey">
+
+                        <div class="col-md-3 flot1">Owner</div>
+
+                        <div class="col-md-9 flot2">Nautical Bulk Shipping 1 Limited</div>
+
+                        <div class="col-md-3 flot3">Yard</div>
+
+                        <div class="col-md-9 flot4">Jiangsu New Hantong Ship Heavy Industry Co., Ltd.</div>
+
+                        <div class="col-md-3 flot1">Flag</div>
+
+                        <div class="col-md-9 flot2">Liberia</div>
+
+                        <div class="col-md-3 flot3">Call Sign</div>
+
+                        <div class="col-md-9 flot4">D5HY7</div>
+
+                        <div class="col-md-3 flot1">Class</div>
+
+                        <div class="col-md-9 flot2">Lloyd's Register</div>
+
+                        <div class="col-md-3 flot3">IMO No.</div>
+
+                        <div class="col-md-9 flot4">969 90 36</div>
+
+                        <div class="col-md-3 flot1">LOA/LBP/Breadth</div>
+
+                        <div class="col-md-9 flot2">189,99 m / 185,00 m / 32,26 m (Moulded)</div>
+
+                        <div class="col-md-3 flot3">Draft design</div>
+
+                        <div class="col-md-9 flot4">11,30 m</div>
+
+                        <div class="col-md-3 flot1">Draft scantl.</div>
+
+                        <div class="col-md-9 flot2">13,30 m</div>
+
+                        <div class="col-md-3 flot3">Height</div>
+
+                        <div class="col-md-9 flot4">abt. 49,3</div>
+
+                        <div class="col-md-3 flot1">Engine</div>
+
+                        <div class="col-md-9 flot2">MAN B&amp;W 6S50ME-C (Tier II) CSR (85%CMCR)6.842.5 KW at 84.3 rpm</div>
+
+                        <div class="col-md-3 flot3">Cruising</div>
+
+                        <div class="col-md-9 flot4">About 18.000 nm</div>
+
+                        <div class="col-md-3 flot1">Speed</div>
+
+                        <div class="col-md-9 flot2">About 14,4 kn</div>
+
+                        <div class="col-md-3 flot3">Consumption</div>
+
+                        <div class="col-md-9 flot4">@ 14,5 kn/ 8.050 KW about 27,0t/day (Ballast)</div>
+
+                        <div class="col-md-3 flot1">Tonnage</div>
+
+                        <div class="col-md-9 flot2">intern. GT about 36.342 t / intern. about 21.614 t</div>
+
+                        <div class="col-md-3 flot3">Cargo Hold</div>
+
+                        <div class="col-md-9 flot4">Grain: about 78.500 m3</div>
+
+                        <div class="col-md-3 flot1">Tank top strength</div>
+
+                        <div class="col-md-9 flot2">Hold 1,3, 5: 25 t/m² Hold 2, 4: 20 t/m²</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 bbgimg">
+                      <img class="ourFleet_image" src="./src/img/fleet/2.jpeg" alt="1">
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <table class="table table-responsive">
+                  <tr class="ourFleet_head">
+                    <th>НАЗВА</th>
+                    <th>ТИП</th>
+                    <th>МОЖЛИВОСТЬ</th>
+                    <th>DWT</th>
+                    <th>РІК БУДІВНИЦТВА</th>
+                    <th>ДЕТАЛІ</th>
+                  </tr>
+                  <tr>
+                    <td>MV Nautical Loredana</td>
+                    <td>Ultramax BC</td>
+                    <td>78.500 m³</td>
+                    <td>63530.4 mts</td>
+                    <td>2015</td>
+                    <td>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
+                        Деталі
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="collapseOne3" class="accordion-collapse collapse" aria-labelledby="headingOne3" data-bs-parent="#fleetAccordion">
+                <div class="accordion-body">
+                  <article class="row">
+                    <div class="col-8">
+                      <div class="row ourFleet_bgGrey">
+
+                        <div class="col-md-3 flot1">Owner</div>
+
+                        <div class="col-md-9 flot2">Nautical Bulk Shipping 2 Limited"</div>
+
+                        <div class="col-md-3 flot3">Yard</div>
+
+                        <div class="col-md-9 flot4">Jiangsu New Hantong Ship Heavy Industry Co., Ltd</div>
+
+                        <div class="col-md-3 flot1">Flag</div>
+
+                        <div class="col-md-9 flot2">Liberia</div>
+
+                        <div class="col-md-3 flot3">Call Sign</div>
+
+                        <div class="col-md-9 flot4">D5HY8</div>
+
+                        <div class="col-md-3 flot1">Class</div>
+
+                        <div class="col-md-9 flot2">Lloyd's Register</div>
+
+                        <div class="col-md-3 flot3">IMO No.</div>
+
+                        <div class="col-md-9 flot4">969 93 11</div>
+
+                        <div class="col-md-3 flot1">LOA/LBP/Breadth</div>
+
+                        <div class="col-md-9 flot2">199,84 m / 194,5 m / 32,26 m (Moulded)</div>
+
+                        <div class="col-md-3 flot3">Draft design</div>
+
+                        <div class="col-md-9 flot4">11,30 m</div>
+
+                        <div class="col-md-3 flot1">Draft scantl.</div>
+
+                        <div class="col-md-9 flot2">13,30 m</div>
+
+                        <div class="col-md-3 flot3">Height</div>
+
+                        <div class="col-md-9 flot4">abt. 49,3</div>
+
+                        <div class="col-md-3 flot1">Engine</div>
+
+                        <div class="col-md-9 flot2">MAN B&amp;W 6S50ME-C (Tier II) CSR (85%CMCR) 6.842.5 KW at 84.3 rpm</div>
+
+                        <div class="col-md-3 flot3">Cruising</div>
+
+                        <div class="col-md-9 flot4">About 18.000 nm</div>
+
+                        <div class="col-md-3 flot1">Speed</div>
+
+                        <div class="col-md-9 flot2">About 14,4 kn</div>
+
+                        <div class="col-md-3 flot3">Consumption</div>
+
+                        <div class="col-md-9 flot4">@ 14,5 kn/ 8.050 KW about 27,0t/day (Ballast</div>
+
+                        <div class="col-md-3 flot1">Tonnage</div>
+
+                        <div class="col-md-9 flot2">intern. GT about 32.300 t / intern. about 18.700 t</div>
+
+                        <div class="col-md-3 flot3">Cargo Hold</div>
+
+                        <div class="col-md-9 flot4">Grain: about 78.500 m³</div>
+
+                        <div class="col-md-3 flot1">Tank top strength</div>
+
+                        <div class="col-md-9 flot2">Hold 1,3, 5: 25 t/m² Hold 2, 4: 20 t/m²</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 bbgimg">
+                      <img class="ourFleet_image" src="./src/img/fleet/3.jpeg" alt="1">
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <table class="table table-responsive">
+                  <tr class="ourFleet_head">
+                    <th>НАЗВА</th>
+                    <th>ТИП</th>
+                    <th>МОЖЛИВОСТЬ</th>
+                    <th>DWT</th>
+                    <th>РІК БУДІВНИЦТВА</th>
+                    <th>ДЕТАЛІ</th>
+                  </tr>
+                  <tr>
+                    <td>MV Nautical Runa</td>
+                    <td>Ultramax BC</td>
+                    <td>78.500 m³</td>
+                    <td>63530.4 mts</td>
+                    <td>2015</td>
+                    <td>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4">
+                        Деталі
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="collapseOne4" class="accordion-collapse collapse" aria-labelledby="headingOne4" data-bs-parent="#fleetAccordion">
+                <div class="accordion-body">
+                  <article class="row">
+                    <div class="col-8">
+                      <div class="row ourFleet_bgGrey">
+
+                        <div class="col-md-3 flot1">Owner</div>
+
+                        <div class="col-md-9 flot2">Nautical Bulk Shipping 4 Limited"</div>
+
+                        <div class="col-md-3 flot3">Yard</div>
+
+                        <div class="col-md-9 flot4">Jiangsu New Hantong Ship Heavy Industry Co., Ltd</div>
+
+                        <div class="col-md-3 flot1">Flag</div>
+
+                        <div class="col-md-9 flot2">Liberia</div>
+
+                        <div class="col-md-3 flot3">Call Sign</div>
+
+                        <div class="col-md-9 flot4">D5JA6</div>
+
+                        <div class="col-md-3 flot1">Class</div>
+
+                        <div class="col-md-9 flot2">Lloyd's Register</div>
+
+                        <div class="col-md-3 flot3">IMO No.</div>
+
+                        <div class="col-md-9 flot4">969 93 35</div>
+
+                        <div class="col-md-3 flot1">LOA/LBP/Breadth</div>
+
+                        <div class="col-md-9 flot2">199,84 m / 194,5 m / 32,26 m (Moulded)</div>
+
+                        <div class="col-md-3 flot3">Draft design</div>
+
+                        <div class="col-md-9 flot4">11,30 m</div>
+
+                        <div class="col-md-3 flot1">Draft scantl.</div>
+
+                        <div class="col-md-9 flot2">13,30 m</div>
+
+                        <div class="col-md-3 flot3">Height</div>
+
+                        <div class="col-md-9 flot4">abt. 49,3</div>
+
+                        <div class="col-md-3 flot1">Engine</div>
+
+                        <div class="col-md-9 flot2">MAN B&amp;W 6S50ME-C (Tier II) CSR (85%CMCR)6.842.5 KW at 84.3 rpm</div>
+
+                        <div class="col-md-3 flot3">Cruising</div>
+
+                        <div class="col-md-9 flot4">About 18.000 nm</div>
+
+                        <div class="col-md-3 flot1">Speed</div>
+
+                        <div class="col-md-9 flot2">About 14,4 kn</div>
+
+                        <div class="col-md-3 flot3">Consumption</div>
+
+                        <div class="col-md-9 flot4">@ 14,5 kn/ 8.050 KW about 27,0t/day (Ballast)</div>
+
+                        <div class="col-md-3 flot1">Tonnage</div>
+
+                        <div class="col-md-9 flot2">intern. GT about 36.342 t / intern. about 21.614 t</div>
+
+                        <div class="col-md-3 flot3">Cargo Hold</div>
+
+                        <div class="col-md-9 flot4">Grain: about 78.500 m3</div>
+
+                        <div class="col-md-3 flot1">Tank top strength</div>
+
+                        <div class="col-md-9 flot2">Hold 1,3, 5: 25 t/m² Hold 2, 4: 20 t/m²</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 bbgimg">
+                      <img class="ourFleet_image" src="./src/img/fleet/4.jpeg" alt="1">
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <table class="table table-responsive">
+                  <tr class="ourFleet_head">
+                    <th>НАЗВА</th>
+                    <th>ТИП</th>
+                    <th>МОЖЛИВОСТЬ</th>
+                    <th>DWT</th>
+                    <th>РІК БУДІВНИЦТВА</th>
+                    <th>ДЕТАЛІ</th>
+                  </tr>
+                  <tr>
+                    <td>MV Nautical Lucia</td>
+                    <td>Ultramax BC</td>
+                    <td>78.500 m³</td>
+                    <td>63530.4 mts</td>
+                    <td>2016</td>
+                    <td>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne5" aria-expanded="true" aria-controls="collapseOne5">
+                        Деталі
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="collapseOne5" class="accordion-collapse collapse" aria-labelledby="headingOne5" data-bs-parent="#fleetAccordion">
+                <div class="accordion-body">
+                  <article class="row">
+                    <div class="col-8">
+                      <div class="row ourFleet_bgGrey">
+
+                        <div class="col-md-3 flot1">Owner</div>
+
+                        <div class="col-md-9 flot2">Nautical Bulk Shipping 7 Limited</div>
+
+                        <div class="col-md-3 flot3">Yard</div>
+
+                        <div class="col-md-9 flot4">Jiangsu New Hantong Ship Heavy Industry Co., Ltd.</div>
+
+                        <div class="col-md-3 flot1">Flag</div>
+
+                        <div class="col-md-9 flot2">Liberia</div>
+
+                        <div class="col-md-3 flot3">Call Sign</div>
+
+                        <div class="col-md-9 flot4">D5JH4</div>
+
+                        <div class="col-md-3 flot1">Class</div>
+
+                        <div class="col-md-9 flot2">Lloyd's Register</div>
+
+                        <div class="col-md-3 flot3">IMO No.</div>
+
+                        <div class="col-md-9 flot4">96 993 61</div>
+
+                        <div class="col-md-3 flot1">LOA/LBP/Breadth</div>
+
+                        <div class="col-md-9 flot2">199,84 m / 194,5 m / 32,26 m (Moulded)</div>
+
+                        <div class="col-md-3 flot3">Draft design</div>
+
+                        <div class="col-md-9 flot4">11,30 m</div>
+
+                        <div class="col-md-3 flot1">Draft scantl.</div>
+
+                        <div class="col-md-9 flot2">13,30 m</div>
+
+                        <div class="col-md-3 flot3">Height</div>
+
+                        <div class="col-md-9 flot4">abt. 49,3</div>
+
+                        <div class="col-md-3 flot1">Engine</div>
+
+                        <div class="col-md-9 flot2">MAN B&amp;W 6S50ME-C (Tier II) CSR (85%CMCR) 6.842.5 KW at 84.3 rpm</div>
+
+                        <div class="col-md-3 flot3">Cruising</div>
+
+                        <div class="col-md-9 flot4">About 18.000 nm</div>
+
+                        <div class="col-md-3 flot1">Speed</div>
+
+                        <div class="col-md-9 flot2">About 14,4 kn</div>
+
+                        <div class="col-md-3 flot3">Consumption</div>
+
+                        <div class="col-md-9 flot4">@ 14,5 kn/ 8.050 KW about 27,0t/day (Ballast)</div>
+
+                        <div class="col-md-3 flot1">Tonnage</div>
+
+                        <div class="col-md-9 flot2">intern. GT about 32.300 t / intern. about 18.700 t</div>
+
+                        <div class="col-md-3 flot3">Cargo Hold</div>
+
+                        <div class="col-md-9 flot4">Grain: about 78.500 m3</div>
+
+                        <div class="col-md-3 flot1">Tank top strength</div>
+
+                        <div class="col-md-9 flot2">Hold 1,3, 5: 25 t/m² Hold 2, 4: 20 t/m²</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 bbgimg">
+                      <img class="ourFleet_image" src="./src/img/fleet/5.jpeg" alt="1">
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <table class="table table-responsive">
+                  <tr class="ourFleet_head">
+                    <th>НАЗВА</th>
+                    <th>ТИП</th>
+                    <th>МОЖЛИВОСТЬ</th>
+                    <th>DWT</th>
+                    <th>РІК БУДІВНИЦТВА</th>
+                    <th>ДЕТАЛІ</th>
+                  </tr>
+                  <tr>
+                    <td>MV Nautical Alice</td>
+                    <td>Ultramax BC</td>
+                    <td>78.500 m³</td>
+                    <td>63530.4 mts</td>
+                    <td>2016</td>
+                    <td>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne6" aria-expanded="true" aria-controls="collapseOne6">
+                        Деталі
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="collapseOne6" class="accordion-collapse collapse" aria-labelledby="headingOne6" data-bs-parent="#fleetAccordion">
+                <div class="accordion-body">
+                  <article class="row">
+                    <div class="col-8">
+                      <div class="row ourFleet_bgGrey">
+
+                        <div class="col-md-3 flot1">Owner</div>
+
+                        <div class="col-md-9 flot2">Nautical Bulk Shipping 9 Limited</div>
+
+                        <div class="col-md-3 flot3">Yard</div>
+
+                        <div class="col-md-9 flot4">Jiangsu New Hantong Ship Heavy Industry Co., Ltd</div>
+
+                        <div class="col-md-3 flot1">Flag</div>
+
+                        <div class="col-md-9 flot2">Liberia</div>
+
+                        <div class="col-md-3 flot3">Call Sign</div>
+
+                        <div class="col-md-9 flot4">D5LF7</div>
+
+                        <div class="col-md-3 flot1">Class</div>
+
+                        <div class="col-md-9 flot2">Lloyd's Register</div>
+
+                        <div class="col-md-3 flot3">IMO No.</div>
+
+                        <div class="col-md-9 flot4">97 37 694</div>
+
+                        <div class="col-md-3 flot1">LOA/LBP/Breadth</div>
+
+                        <div class="col-md-9 flot2">199,84 m / 194,5 m / 32,26 m (Moulded)</div>
+
+                        <div class="col-md-3 flot3">Draft design</div>
+
+                        <div class="col-md-9 flot4">11,30 m</div>
+
+                        <div class="col-md-3 flot1">Draft scantl.</div>
+
+                        <div class="col-md-9 flot2">13,30 m</div>
+
+                        <div class="col-md-3 flot3">Height</div>
+
+                        <div class="col-md-9 flot4">abt. 49,3</div>
+
+                        <div class="col-md-3 flot1">Engine</div>
+
+                        <div class="col-md-9 flot2">MMAN B&amp;W 6S50ME-C (Tier II) CSR (85%CMCR) 6.842.5 KW at 84.3 rpm</div>
+
+                        <div class="col-md-3 flot3">Cruising</div>
+
+                        <div class="col-md-9 flot4">About 18.000 nm</div>
+
+                        <div class="col-md-3 flot1">Speed</div>
+
+                        <div class="col-md-9 flot2">About 14,4 kn</div>
+
+                        <div class="col-md-3 flot3">Consumption</div>
+
+                        <div class="col-md-9 flot4">@ 14,5 kn/ 8.050 KW about 27,0t/day (Ballast)</div>
+
+                        <div class="col-md-3 flot1">Tonnage</div>
+
+                        <div class="col-md-9 flot2">intern. GT about 36.342 t / intern. about 21.614 t</div>
+
+                        <div class="col-md-3 flot3">Cargo Hold</div>
+
+                        <div class="col-md-9 flot4">Grain: about 78.500 m3</div>
+
+                        <div class="col-md-3 flot1">Tank top strength</div>
+
+                        <div class="col-md-9 flot2">Hold 1,3, 5: 25 t/m² Hold 2, 4: 20 t/m²</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 bbgimg">
+                      <img class="ourFleet_image" src="./src/img/fleet/6.jpeg" alt="1">
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <table class="table table-responsive">
+                  <tr class="ourFleet_head">
+                    <th>НАЗВА</th>
+                    <th>ТИП</th>
+                    <th>МОЖЛИВОСТЬ</th>
+                    <th>DWT</th>
+                    <th>РІК БУДІВНИЦТВА</th>
+                    <th>ДЕТАЛІ</th>
+                  </tr>
+                  <tr>
+                    <td>MV Nautical Anne</td>
+                    <td>Ultramax BC</td>
+                    <td>78.500 m³</td>
+                    <td>63530.4 mts</td>
+                    <td>2016</td>
+                    <td>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne7" aria-expanded="true" aria-controls="collapseOne7">
+                        Деталі
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="collapseOne7" class="accordion-collapse collapse" aria-labelledby="collapseOne7" data-bs-parent="#fleetAccordion">
+                <div class="accordion-body">
+                  <article class="row">
+                    <div class="col-8">
+                      <div class="row ourFleet_bgGrey">
+
+                        <div class="col-md-3 flot1">Owner</div>
+
+                        <div class="col-md-9 flot2">Nautical Bulk Shipping 10 Limited</div>
+
+                        <div class="col-md-3 flot3">Yard</div>
+
+                        <div class="col-md-9 flot4">Jiangsu New Hantong Ship Heavy Industry Co., Ltd.</div>
+
+                        <div class="col-md-3 flot1">Flag</div>
+
+                        <div class="col-md-9 flot2">Liberia</div>
+
+                        <div class="col-md-3 flot3">Call Sign</div>
+
+                        <div class="col-md-9 flot4">D5LF8</div>
+
+                        <div class="col-md-3 flot1">Class</div>
+
+                        <div class="col-md-9 flot2">Lloyd's Register</div>
+
+                        <div class="col-md-3 flot3">IMO No.</div>
+
+                        <div class="col-md-9 flot4">97 37 709</div>
+
+                        <div class="col-md-3 flot1">LOA/LBP/Breadth</div>
+
+                        <div class="col-md-9 flot2">199,84 m / 194,5 m / 32,26 m (Moulded)</div>
+
+                        <div class="col-md-3 flot3">Draft design</div>
+
+                        <div class="col-md-9 flot4">11,30 m</div>
+
+                        <div class="col-md-3 flot1">Draft scantl.</div>
+
+                        <div class="col-md-9 flot2">13,30 m</div>
+
+                        <div class="col-md-3 flot3">Height</div>
+
+                        <div class="col-md-9 flot4">abt. 49,3</div>
+
+                        <div class="col-md-3 flot1">Engine</div>
+
+                        <div class="col-md-9 flot2">MAN B&amp;W 6S50ME-C (Tier II) CSR (85%CMCR) 6.842.5 KW at 84.3 rpm</div>
+
+                        <div class="col-md-3 flot3">Cruising</div>
+
+                        <div class="col-md-9 flot4">About 18.000 nm</div>
+
+                        <div class="col-md-3 flot1">Speed</div>
+
+                        <div class="col-md-9 flot2">About 14,4 kn</div>
+
+                        <div class="col-md-3 flot3">Consumption</div>
+
+                        <div class="col-md-9 flot4">@ 14,5 kn/ 8.050 KW about 27,0t/day (Ballast)</div>
+
+                        <div class="col-md-3 flot1">Tonnage</div>
+
+                        <div class="col-md-9 flot2">intern. GT about 36.342 t / intern. about 21.614 t</div>
+
+                        <div class="col-md-3 flot3">Cargo Hold</div>
+
+                        <div class="col-md-9 flot4">Grain: about 78.500 m3</div>
+
+                        <div class="col-md-3 flot1">Tank top strength</div>
+
+                        <div class="col-md-9 flot2">Hold 1,3, 5: 25 t/m² Hold 2, 4: 20 t/m²</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 bbgimg">
+                      <img class="ourFleet_image" src="./src/img/fleet/7.jpeg" alt="1">
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <table class="table table-responsive">
+                  <tr class="ourFleet_head">
+                    <th>НАЗВА</th>
+                    <th>ТИП</th>
+                    <th>МОЖЛИВОСТЬ</th>
+                    <th>DWT</th>
+                    <th>РІК БУДІВНИЦТВА</th>
+                    <th>ДЕТАЛІ</th>
+                  </tr>
+                  <tr>
+                    <td>MV Nautical Georgia</td>
+                    <td>Ultramax BC</td>
+                    <td>78.500 m³</td>
+                    <td>63530.4 mts</td>
+                    <td>2017</td>
+                    <td>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne8" aria-expanded="true" aria-controls="collapseOne8">
+                        Деталі
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="collapseOne8" class="accordion-collapse collapse" aria-labelledby="collapseOne8" data-bs-parent="#fleetAccordion">
+                <div class="accordion-body">
+                  <article class="row">
+                    <div class="col-8">
+                      <div class="row ourFleet_bgGrey">
+                        <div class="col-md-3 flot1">Owner</div>
+
+                        <div class="col-md-9 flot2">Nautical Bulk Shipping 11 Limited</div>
+
+                        <div class="col-md-3 flot3">Yard</div>
+
+                        <div class="col-md-9 flot4">Jiangsu New Hantong Ship Heavy Industry Co., Ltd.</div>
+
+                        <div class="col-md-3 flot1">Flag</div>
+
+                        <div class="col-md-9 flot2">Liberia</div>
+
+                        <div class="col-md-3 flot3">Call Sign</div>
+
+                        <div class="col-md-9 flot4">D5NV4</div>
+
+                        <div class="col-md-3 flot1">Class</div>
+
+                        <div class="col-md-9 flot2">Lloyd's Register</div>
+
+                        <div class="col-md-3 flot3">IMO No.</div>
+
+                        <div class="col-md-9 flot4">97 37 711</div>
+
+                        <div class="col-md-3 flot1">LOA/LBP/Breadth</div>
+
+                        <div class="col-md-9 flot2">199,84 m / 194,5 m / 32,26 m (Moulded)</div>
+
+                        <div class="col-md-3 flot3">Draft design</div>
+
+                        <div class="col-md-9 flot4">11,30 m</div>
+
+                        <div class="col-md-3 flot1">Draft scantl.</div>
+
+                        <div class="col-md-9 flot2">13,30 m</div>
+
+                        <div class="col-md-3 flot3">Height</div>
+
+                        <div class="col-md-9 flot4">abt. 49,3</div>
+
+                        <div class="col-md-3 flot1">Engine</div>
+
+                        <div class="col-md-9 flot2">MAN B&amp;W 6S50ME-C (Tier II) CSR (85%CMCR) 6.842.5 KW at 84.3 rpm</div>
+
+                        <div class="col-md-3 flot3">Cruising</div>
+
+                        <div class="col-md-9 flot4">About 18.000 nm</div>
+
+                        <div class="col-md-3 flot1">Speed</div>
+
+                        <div class="col-md-9 flot2">About 14,4 kn</div>
+
+                        <div class="col-md-3 flot3">Consumption</div>
+
+                        <div class="col-md-9 flot4">@ 14,5 kn/ 8.050 KW about 27,0t/day (Ballast)</div>
+
+                        <div class="col-md-3 flot1">Tonnage</div>
+
+                        <div class="col-md-9 flot2">intern. GT about 36.342 t / intern. about 21.614 t</div>
+
+                        <div class="col-md-3 flot3">Cargo Hold</div>
+
+                        <div class="col-md-9 flot4">Grain: about 78.500 m³</div>
+
+                        <div class="col-md-3 flot1">Tank top strength</div>
+
+                        <div class="col-md-9 flot2">Hold 1,3, 5: 25 t/m² Hold 2, 4: 20 t/m²</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 bbgimg">
+                      <img class="ourFleet_image" src="./src/img/fleet/8.jpeg" alt="1">
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <table class="table table-responsive">
+                  <tr class="ourFleet_head">
+                    <th>НАЗВА</th>
+                    <th>ТИП</th>
+                    <th>МОЖЛИВОСТЬ</th>
+                    <th>DWT</th>
+                    <th>РІК БУДІВНИЦТВА</th>
+                    <th>ДЕТАЛІ</th>
+                  </tr>
+                  <tr>
+                    <td>Nautical Madison</td>
+                    <td>Ultramax BC</td>
+                    <td>78.500 m³</td>
+                    <td>63530.4 mts</td>
+                    <td>2018</td>
+                    <td>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne9" aria-expanded="true" aria-controls="collapseOne9">
+                        Деталі
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="collapseOne9" class="accordion-collapse collapse" aria-labelledby="collapseOne9" data-bs-parent="#fleetAccordion">
+                <div class="accordion-body">
+                  <article class="row">
+                    <div class="col-8">
+                      <div class="row ourFleet_bgGrey">
+                        <div class="col-md-3 flot1">Owner</div>
+
+                        <div class="col-md-9 flot2">Nautical Bulk Shipping 15 Limited</div>
+
+                        <div class="col-md-3 flot3">Yard</div>
+
+                        <div class="col-md-9 flot4">Jiangsu New Hantong Ship Heavy Industry Co., Ltd.</div>
+
+                        <div class="col-md-3 flot1">Flag</div>
+
+                        <div class="col-md-9 flot2">Liberia</div>
+
+                        <div class="col-md-3 flot3">Call Sign</div>
+
+                        <div class="col-md-9 flot4">D5NV5</div>
+
+                        <div class="col-md-3 flot1">Class</div>
+
+                        <div class="col-md-9 flot2">Lloyd's Register</div>
+
+                        <div class="col-md-3 flot3">IMO No.</div>
+
+                        <div class="col-md-9 flot4">97 47 687</div>
+
+                        <div class="col-md-3 flot1">LOA/LBP/Breadth</div>
+
+                        <div class="col-md-9 flot2">199,84 m / 194,5 m / 32,26 m (Moulded)</div>
+
+                        <div class="col-md-3 flot3">Draft design</div>
+
+                        <div class="col-md-9 flot4">11,30 m</div>
+
+                        <div class="col-md-3 flot1">Draft scantl.</div>
+
+                        <div class="col-md-9 flot2">13,30 m</div>
+
+                        <div class="col-md-3 flot3">Height</div>
+
+                        <div class="col-md-9 flot4">abt. 49,3</div>
+
+                        <div class="col-md-3 flot1">Engine</div>
+
+                        <div class="col-md-9 flot2">MAN B&amp;W 6S50ME-C (Tier II) CSR (85%CMCR) 6.842.5 KW at 84.3 rpm</div>
+
+                        <div class="col-md-3 flot3">Cruising</div>
+
+                        <div class="col-md-9 flot4">About 18.000 nm</div>
+
+                        <div class="col-md-3 flot1">Speed</div>
+
+                        <div class="col-md-9 flot2">About 14,4 kn</div>
+
+                        <div class="col-md-3 flot3">Consumption</div>
+
+                        <div class="col-md-9 flot4">@ 14,5 kn/ 8.050 KW about 27,0t/day (Ballast)</div>
+
+                        <div class="col-md-3 flot1">Tonnage</div>
+
+                        <div class="col-md-9 flot2">intern. GT about 36.342 t / intern. about 21.614 t</div>
+
+                        <div class="col-md-3 flot3">Cargo Hold</div>
+
+                        <div class="col-md-9 flot4">ca. 78.500 m³</div>
+
+                        <div class="col-md-3 flot1">Tank top strength</div>
+
+                        <div class="col-md-9 flot2">Hold 1,3, 5: 25 t/m Hold 2, 4: 20 t/m</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 bbgimg">
+                      <img class="ourFleet_image" src="./src/img/fleet/9.jpeg" alt="1">
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <table class="table table-responsive">
+                  <tr class="ourFleet_head">
+                    <th>НАЗВА</th>
+                    <th>ТИП</th>
+                    <th>МОЖЛИВОСТЬ</th>
+                    <th>DWT</th>
+                    <th>РІК БУДІВНИЦТВА</th>
+                    <th>ДЕТАЛІ</th>
+                  </tr>
+                  <tr>
+                    <td>MV Topas</td>
+                    <td>Post-Panmax BC</td>
+                    <td>110.000 m³</td>
+                    <td>92.000 mts</td>
+                    <td>2011</td>
+                    <td>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne10" aria-expanded="true" aria-controls="collapseOne10">
+                        Деталі
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="collapseOne10" class="accordion-collapse collapse" aria-labelledby="collapseOne10" data-bs-parent="#fleetAccordion">
+                <div class="accordion-body">
+                  <article class="row">
+                    <div class="col-8">
+                      <div class="row ourFleet_bgGrey">
+                        <div class="col-md-3 flot1">Owner</div>
+
+                        <div class="col-md-9 flot2">CONTI 179. Schifffahrts-GmbH &amp; Co. Bulker KG MS “CONTI TOPAS“</div>
+
+                        <div class="col-md-3 flot3">Yard</div>
+
+                        <div class="col-md-9 flot4">Cosco Zhoushan Shipyard.</div>
+
+                        <div class="col-md-3 flot1">Flag</div>
+
+                        <div class="col-md-9 flot2">Malta</div>
+
+                        <div class="col-md-3 flot3">Call Sign</div>
+
+                        <div class="col-md-9 flot4">9HA3493</div>
+
+                        <div class="col-md-3 flot1">Class</div>
+
+                        <div class="col-md-9 flot2">DNV GL</div>
+
+                        <div class="col-md-3 flot3">IMO No.</div>
+
+                        <div class="col-md-9 flot4">94 746 32</div>
+
+                        <div class="col-md-3 flot1">LOA/LBP/Breadth</div>
+
+                        <div class="col-md-9 flot2">229,20 m / 222,00 m / 38,00 m (Moulded)</div>
+
+                        <div class="col-md-3 flot3">Draft design</div>
+
+                        <div class="col-md-9 flot4">12,50 m</div>
+
+                        <div class="col-md-3 flot1">Draft scantl.</div>
+
+                        <div class="col-md-9 flot2">14,90 m</div>
+
+                        <div class="col-md-3 flot3">Height</div>
+
+                        <div class="col-md-9 flot4">tba</div>
+
+                        <div class="col-md-3 flot1">Engine</div>
+
+                        <div class="col-md-9 flot2">MAN B&amp;W 6S60MC-C CSR (85%MCR) 10.404 KW at 99,5 rpm</div>
+
+                        <div class="col-md-3 flot3">Cruising</div>
+
+                        <div class="col-md-9 flot4">About 22.000 nm</div>
+
+                        <div class="col-md-3 flot1">Speed</div>
+
+                        <div class="col-md-9 flot2">About 15,4 kn</div>
+
+                        <div class="col-md-3 flot3">Consumption</div>
+
+                        <div class="col-md-9 flot4">@ 15,4 kn/ 10.404 KW about 46,0 t/day (Ballast)</div>
+
+                        <div class="col-md-3 flot1">Tonnage</div>
+
+                        <div class="col-md-9 flot2">intern. GT about 51.000 t / intern. about 36.600 t</div>
+
+                        <div class="col-md-3 flot3">Cargo Hold</div>
+
+                        <div class="col-md-9 flot4">Grain: about 110.000 m³</div>
+
+                        <div class="col-md-3 flot1">Tank top strength</div>
+
+                        <div class="col-md-9 flot2">Hold 1: 21,7 t/m², Hold 1,3,5,7: 31 t/m², Hold 2,4,6: 21 t/m²</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 bbgimg">
+                      <img class="ourFleet_image" src="./src/img/fleet/10.png" alt="1">
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <table class="table table-responsive">
+                  <tr class="ourFleet_head">
+                    <th>НАЗВА</th>
+                    <th>ТИП</th>
+                    <th>МОЖЛИВОСТЬ</th>
+                    <th>DWT</th>
+                    <th>РІК БУДІВНИЦТВА</th>
+                    <th>ДЕТАЛІ</th>
+                  </tr>
+                  <tr>
+                    <td>MV Tuerkis</td>
+                    <td>Post-Panmax BC</td>
+                    <td>110.000 m³</td>
+                    <td>92.000 mts</td>
+                    <td>2012</td>
+                    <td>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne11" aria-expanded="true" aria-controls="collapseOne11">
+                        Деталі
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="collapseOne11" class="accordion-collapse collapse" aria-labelledby="collapseOne11" data-bs-parent="#fleetAccordion">
+                <div class="accordion-body">
+                  <article class="row">
+                    <div class="col-8">
+                      <div class="row ourFleet_bgGrey">
+                        <div class="col-md-3 flot1">Owner</div>
+
+                        <div class="col-md-9 flot2">CONTI 180. Schiffahrts-GmbH &amp; Co. KG Nr. 1</div>
+
+                        <div class="col-md-3 flot3">Yard</div>
+
+                        <div class="col-md-9 flot4">COSCO Zhoushan Shipyard</div>
+
+                        <div class="col-md-3 flot1">Flag</div>
+
+                        <div class="col-md-9 flot2">Malta</div>
+
+                        <div class="col-md-3 flot3">Call Sign</div>
+
+                        <div class="col-md-9 flot4">9HA3505</div>
+
+                        <div class="col-md-3 flot1">Class</div>
+
+                        <div class="col-md-9 flot2">DNV GL</div>
+
+                        <div class="col-md-3 flot3">IMO No.</div>
+
+                        <div class="col-md-9 flot4">94 746 18</div>
+
+                        <div class="col-md-3 flot1">LOA/LBP/Breadth</div>
+
+                        <div class="col-md-9 flot2">229,20 m / 222,00 m / 38,00 m (Moulded)</div>
+
+                        <div class="col-md-3 flot3">Draft design</div>
+
+                        <div class="col-md-9 flot4">12,50 m</div>
+
+                        <div class="col-md-3 flot1">Draft scantl.</div>
+
+                        <div class="col-md-9 flot2">14,90 m</div>
+
+                        <div class="col-md-3 flot3">Height</div>
+
+                        <div class="col-md-9 flot4">tba</div>
+
+                        <div class="col-md-3 flot1">Engine</div>
+
+                        <div class="col-md-9 flot2">MAN B&amp;W 6S60MC MCR 12240 KW at 105 rpm</div>
+
+                        <div class="col-md-3 flot3">Cruising</div>
+
+                        <div class="col-md-9 flot4">About 22.000 nm</div>
+
+                        <div class="col-md-3 flot1">Speed</div>
+
+                        <div class="col-md-9 flot2">About 15,4 kn</div>
+
+                        <div class="col-md-3 flot3">Consumption</div>
+
+                        <div class="col-md-9 flot4">@ 15,4 kn/ 10.404 KW about 46,0 t/day (Ballast)</div>
+
+                        <div class="col-md-3 flot1">Tonnage</div>
+
+                        <div class="col-md-9 flot2">intern. GT about 51.000 t / intern. about 36.600 t</div>
+
+                        <div class="col-md-3 flot3">Cargo Hold</div>
+
+                        <div class="col-md-9 flot4">Grain: about 110.000 m3</div>
+
+                        <div class="col-md-3 flot1">Tank top strength</div>
+
+                        <div class="col-md-9 flot2">Hold 1: 21,7 t/m², Hold 1,3,5,7: 31 t/m², Hold 2,4,6: 21 t/m²</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 bbgimg">
+                      <img class="ourFleet_image" src="./src/img/fleet/11.jpeg" alt="1">
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <table class="table table-responsive">
+                  <tr class="ourFleet_head">
+                    <th>НАЗВА</th>
+                    <th>ТИП</th>
+                    <th>МОЖЛИВОСТЬ</th>
+                    <th>DWT</th>
+                    <th>РІК БУДІВНИЦТВА</th>
+                    <th>ДЕТАЛІ</th>
+                  </tr>
+                  <tr>
+                    <td>MV Turmalin</td>
+                    <td>Post-Panmax BC</td>
+                    <td>110.000 m³</td>
+                    <td>92.000 mts</td>
+                    <td>2012</td>
+                    <td>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne12" aria-expanded="true" aria-controls="collapseOne12">
+                        Деталі
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="collapseOne12" class="accordion-collapse collapse" aria-labelledby="collapseOne12" data-bs-parent="#fleetAccordion">
+                <div class="accordion-body">
+                  <article class="row">
+                    <div class="col-8">
+                      <div class="row ourFleet_bgGrey">
+                        <div class="col-md-3 flot1">Owner</div>
+
+                        <div class="col-md-9 flot2">CONTI 181. Schifffahrts-GmbH &amp; Co. KG Nr. 1</div>
+
+                        <div class="col-md-3 flot3">Yard</div>
+
+                        <div class="col-md-9 flot4">COSCO Zhoushan Shipyard</div>
+
+                        <div class="col-md-3 flot1">Flag</div>
+
+                        <div class="col-md-9 flot2">Malta</div>
+
+                        <div class="col-md-3 flot3">Call Sign</div>
+
+                        <div class="col-md-9 flot4">9HA3599</div>
+
+                        <div class="col-md-3 flot1">Class</div>
+
+                        <div class="col-md-9 flot2">DNV GL</div>
+
+                        <div class="col-md-3 flot3">IMO No.</div>
+
+                        <div class="col-md-9 flot4">94 746 44</div>
+
+                        <div class="col-md-3 flot1">LOA/LBP/Breadth</div>
+
+                        <div class="col-md-9 flot2">229,20 m / 222,00 m / 38,00 m (Moulded)</div>
+
+                        <div class="col-md-3 flot3">Draft design</div>
+
+                        <div class="col-md-9 flot4">12,50 m</div>
+
+                        <div class="col-md-3 flot1">Draft scantl.</div>
+
+                        <div class="col-md-9 flot2">14,90 m</div>
+
+                        <div class="col-md-3 flot3">Height</div>
+
+                        <div class="col-md-9 flot4">tba</div>
+
+                        <div class="col-md-3 flot1">Engine</div>
+
+                        <div class="col-md-9 flot2">MAN B&amp;W 6S60MC MCR 12240 KW - CSR (85% MCR) 10404 KW</div>
+
+                        <div class="col-md-3 flot3">Cruising</div>
+
+                        <div class="col-md-9 flot4">About 22.000 nm</div>
+
+                        <div class="col-md-3 flot1">Speed</div>
+
+                        <div class="col-md-9 flot2">About 15,4 kn</div>
+
+                        <div class="col-md-3 flot3">Consumption</div>
+
+                        <div class="col-md-9 flot4">@ 15,4 kn/ 10.404 KW about 46,0 t/day (Ballast)</div>
+
+                        <div class="col-md-3 flot1">Tonnage</div>
+
+                        <div class="col-md-9 flot2">intern. GT about 51.000 t / intern. about 36.600 t</div>
+
+                        <div class="col-md-3 flot3">Cargo Hold</div>
+
+                        <div class="col-md-9 flot4">Grain: about 110.000 m3</div>
+
+                        <div class="col-md-3 flot1">Tank top strength</div>
+
+                        <div class="col-md-9 flot2">Hold 1: 21,7 t/m², Hold 1,3,5,7: 31 t/m², Hold 2,4,6: 21 t/m²</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 bbgimg">
+                      <img class="ourFleet_image" src="./src/img/fleet/12.jpeg" alt="1">
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <table class="table table-responsive">
+                  <tr class="ourFleet_head">
+                    <th>НАЗВА</th>
+                    <th>ТИП</th>
+                    <th>МОЖЛИВОСТЬ</th>
+                    <th>DWT</th>
+                    <th>РІК БУДІВНИЦТВА</th>
+                    <th>ДЕТАЛІ</th>
+                  </tr>
+                  <tr>
+                    <td>Ms Kim Oldendorff</td>
+                    <td>Kamsarmax BC</td>
+                    <td>96.830 m³</td>
+                    <td>81.600 mts</td>
+                    <td>2019</td>
+                    <td>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne13" aria-expanded="true" aria-controls="collapseOne13">
+                        Деталі
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="collapseOne13" class="accordion-collapse collapse" aria-labelledby="collapseOne13" data-bs-parent="#fleetAccordion">
+                <div class="accordion-body">
+                  <article class="row">
+                    <div class="col-8">
+                      <div class="row ourFleet_bgGrey">
+                        <div class="col-md-3 flot1">Owner</div>
+
+                        <div class="col-md-9 flot2">Oldendorff Carriers GmbH &amp; Co. KG</div>
+
+                        <div class="col-md-3 flot3">Yard</div>
+
+                        <div class="col-md-9 flot4">Jiangsu New Hantong Heavy Industry Co., LTD</div>
+
+                        <div class="col-md-3 flot1">Flag</div>
+
+                        <div class="col-md-9 flot2">Portugal</div>
+
+                        <div class="col-md-3 flot3">Call Sign</div>
+
+                        <div class="col-md-9 flot4">CQAR2</div>
+
+                        <div class="col-md-3 flot1">Class</div>
+
+                        <div class="col-md-9 flot2">------</div>
+
+                        <div class="col-md-3 flot3">IMO No.</div>
+
+                        <div class="col-md-9 flot4">9848998</div>
+
+                        <div class="col-md-3 flot1">LOA/LBP/Breadth</div>
+
+                        <div class="col-md-9 flot2">229 m / 225,50 m / 32,26 m</div>
+
+                        <div class="col-md-3 flot3">Draft design</div>
+
+                        <div class="col-md-9 flot4">12,20 m</div>
+
+                        <div class="col-md-3 flot1">Draft scantl.</div>
+
+                        <div class="col-md-9 flot2">14,45 m</div>
+
+                        <div class="col-md-3 flot3">Height</div>
+
+                        <div class="col-md-9 flot4">tba</div>
+
+                        <div class="col-md-3 flot1">Engine</div>
+
+                        <div class="col-md-9 flot2">MAN B&amp;W 6S60ME-C8.5</div>
+
+                        <div class="col-md-3 flot3">Cruising</div>
+
+                        <div class="col-md-9 flot4">About 25.000 nm</div>
+
+                        <div class="col-md-3 flot1">Speed</div>
+
+                        <div class="col-md-9 flot2">About 14,2 kn</div>
+
+                        <div class="col-md-3 flot3">Consumption</div>
+
+                        <div class="col-md-9 flot4">--------</div>
+
+                        <div class="col-md-3 flot1">Tonnage</div>
+
+                        <div class="col-md-9 flot2">intern. GT about 44.029 t / intern. about 27.590 t</div>
+
+                        <div class="col-md-3 flot3">Cargo Hold</div>
+
+                        <div class="col-md-9 flot4">Grain: about 96.830 m³</div>
+
+                        <div class="col-md-3 flot1">Tank top strength</div>
+
+                        <div class="col-md-9 flot2">-------</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 bbgimg">
+                      <img class="ourFleet_image" src="./src/img/fleet/13.jpeg" alt="1">
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <table class="table table-responsive">
+                  <tr class="ourFleet_head">
+                    <th>НАЗВА</th>
+                    <th>ТИП</th>
+                    <th>МОЖЛИВОСТЬ</th>
+                    <th>DWT</th>
+                    <th>РІК БУДІВНИЦТВА</th>
+                    <th>ДЕТАЛІ</th>
+                  </tr>
+                  <tr>
+                    <td>Ms Knut Oldendorff</td>
+                    <td>Kamsarmax BC</td>
+                    <td>96.830 m³</td>
+                    <td>81.600 mts</td>
+                    <td>2019</td>
+                    <td>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne14" aria-expanded="true" aria-controls="collapseOne14">
+                        Деталі
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="collapseOne14" class="accordion-collapse collapse" aria-labelledby="collapseOne14" data-bs-parent="#fleetAccordion">
+                <div class="accordion-body">
+                  <article class="row">
+                    <div class="col-8">
+                      <div class="row ourFleet_bgGrey">
+                        <div class="col-md-3 flot1">Owner</div>
+
+                        <div class="col-md-9 flot2">Oldendorff Carriers GmbH &amp; Co. KG</div>
+
+                        <div class="col-md-3 flot3">Yard</div>
+
+                        <div class="col-md-9 flot4">Jiangsu New Hantong Heavy Industry Co., LTD</div>
+
+                        <div class="col-md-3 flot1">Flag</div>
+
+                        <div class="col-md-9 flot2">Portugal</div>
+
+                        <div class="col-md-3 flot3">Call Sign</div>
+
+                        <div class="col-md-9 flot4">CQAR2</div>
+
+                        <div class="col-md-3 flot1">Class</div>
+
+                        <div class="col-md-9 flot2">------</div>
+
+                        <div class="col-md-3 flot3">IMO No.</div>
+
+                        <div class="col-md-9 flot4">9848998</div>
+
+                        <div class="col-md-3 flot1">LOA/LBP/Breadth</div>
+
+                        <div class="col-md-9 flot2">229 m / 225,50 m / 32,26 m</div>
+
+                        <div class="col-md-3 flot3">Draft design</div>
+
+                        <div class="col-md-9 flot4">12,20 m</div>
+
+                        <div class="col-md-3 flot1">Draft scantl.</div>
+
+                        <div class="col-md-9 flot2">14,45 m</div>
+
+                        <div class="col-md-3 flot3">Height</div>
+
+                        <div class="col-md-9 flot4">tba</div>
+
+                        <div class="col-md-3 flot1">Engine</div>
+
+                        <div class="col-md-9 flot2">MAN B&amp;W 6S60ME-C8.5</div>
+
+                        <div class="col-md-3 flot3">Cruising</div>
+
+                        <div class="col-md-9 flot4">About 25.000 nm</div>
+
+                        <div class="col-md-3 flot1">Speed</div>
+
+                        <div class="col-md-9 flot2">About 14,2 kn</div>
+
+                        <div class="col-md-3 flot3">Consumption</div>
+
+                        <div class="col-md-9 flot4">--------</div>
+
+                        <div class="col-md-3 flot1">Tonnage</div>
+
+                        <div class="col-md-9 flot2">intern. GT about 44.029 t / intern. about 27.590 t</div>
+
+                        <div class="col-md-3 flot3">Cargo Hold</div>
+
+                        <div class="col-md-9 flot4">Grain: about 96.830 m³</div>
+
+                        <div class="col-md-3 flot1">Tank top strength</div>
+
+                        <div class="col-md-9 flot2">-------</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 bbgimg">
+                      <img class="ourFleet_image" src="./src/img/fleet/14.jpeg" alt="1">
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <table class="table table-responsive">
+                  <tr class="ourFleet_head">
+                    <th>НАЗВА</th>
+                    <th>ТИП</th>
+                    <th>МОЖЛИВОСТЬ</th>
+                    <th>DWT</th>
+                    <th>РІК БУДІВНИЦТВА</th>
+                    <th>ДЕТАЛІ</th>
+                  </tr>
+                  <tr>
+                    <td>Ms Klara Oldendorff</td>
+                    <td>Kamsarmax BC</td>
+                    <td>96.830 m³</td>
+                    <td>81.600 mts</td>
+                    <td>2019</td>
+                    <td>
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne15" aria-expanded="true" aria-controls="collapseOne15">
+                        Деталі
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="collapseOne15" class="accordion-collapse collapse" aria-labelledby="collapseOne15" data-bs-parent="#fleetAccordion">
+                <div class="accordion-body">
+                  <article class="row">
+                    <div class="col-8">
+                      <div class="row ourFleet_bgGrey">
+                        <div class="col-md-3 flot1">Owner</div>
+
+                        <div class="col-md-9 flot2">Oldendorff Carriers GmbH &amp; Co. KG</div>
+
+                        <div class="col-md-3 flot3">Yard</div>
+
+                        <div class="col-md-9 flot4">Jiangsu New Hantong Heavy Industry Co., LTD</div>
+
+                        <div class="col-md-3 flot1">Flag</div>
+
+                        <div class="col-md-9 flot2">Portugal</div>
+
+                        <div class="col-md-3 flot3">Call Sign</div>
+
+                        <div class="col-md-9 flot4">CQAR4</div>
+
+                        <div class="col-md-3 flot1">Class</div>
+
+                        <div class="col-md-9 flot2">Lloyd’s Register</div>
+
+                        <div class="col-md-3 flot3">IMO No.</div>
+
+                        <div class="col-md-9 flot4">9849007</div>
+
+                        <div class="col-md-3 flot1">LOA/LBP/Breadth</div>
+
+                        <div class="col-md-9 flot2">229m / 225,5m / 32,26m</div>
+
+                        <div class="col-md-3 flot3">Draft design</div>
+
+                        <div class="col-md-9 flot4">12,20m</div>
+
+                        <div class="col-md-3 flot1">Draft scantl.</div>
+
+                        <div class="col-md-9 flot2">14,45 m</div>
+
+                        <div class="col-md-3 flot3">Height</div>
+
+                        <div class="col-md-9 flot4">tba</div>
+
+                        <div class="col-md-3 flot1">Engine</div>
+
+                        <div class="col-md-9 flot2">MAN B&amp;W 6S60ME-C8.5</div>
+
+                        <div class="col-md-3 flot3">Cruising</div>
+
+                        <div class="col-md-9 flot4">About 25.000 nm</div>
+
+                        <div class="col-md-3 flot1">Speed</div>
+
+                        <div class="col-md-9 flot2">About 14,2 kn</div>
+
+                        <div class="col-md-3 flot3">Consumption</div>
+
+                        <div class="col-md-9 flot4">--------</div>
+
+                        <div class="col-md-3 flot1">Tonnage</div>
+
+                        <div class="col-md-9 flot2">intern. GT about 44.029 t / intern. about 27.590 t</div>
+
+                        <div class="col-md-3 flot3">Cargo Hold</div>
+
+                        <div class="col-md-9 flot4">Grain: about 96.830 m³</div>
+
+                        <div class="col-md-3 flot1">Tank top strength</div>
+
+                        <div class="col-md-9 flot2">-------</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 bbgimg">
+                      <img class="ourFleet_image" src="./src/img/fleet/15.jpeg" alt="1">
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section paralax-3"></section>
+
+  <section class="section container ourTeam py-5" id="OurTeam">
+    <div class="row">
+      <div class="col-12 mb-5 center">
+        <div class="ourTeam_item">
+          <img class="ourTeam_item__img" src="./src/img/team/JOACHIM_ZEPPENFELD.png" alt="images">
+          <p class="ourTeam_item__name">JOACHIM ZEPPENFELD</p>
+          <p class="ourTeam_item__pos">GESCHÄFTSFÜHRER</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 mb-5 offset-md-3 center">
+        <div class="ourTeam_item">
+          <img class="ourTeam_item__img" src="./src/img/team/ALEXANDER_BURCHARD_0.png" alt="images">
+          <p class="ourTeam_item__name">ALEXANDER BURCHARD</p>
+          <p class="ourTeam_item__pos">PROKURIST <br> FLEET DIRECTOR</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-5 center">
+        <div class="ourTeam_item">
+          <img class="ourTeam_item__img" src="./src/img/team/THOMAS_STEIN_0.png" alt="images">
+          <p class="ourTeam_item__name">THOMAS STEIN</p>
+          <p class="ourTeam_item__pos">PROKURIST <br> LEITER BUCHHALTUNG</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 mb-5 center">
+        <div class="ourTeam_item">
+          <img class="ourTeam_item__img" src="./src/img/team/HENNING_PULMER_1.png" alt="images">
+          <p class="ourTeam_item__name">HENNING PULMER</p>
+          <p class="ourTeam_item__pos">DPA / CSO</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-5 center">
+        <div class="ourTeam_item">
+          <img class="ourTeam_item__img" src="./src/img/team/irina_grabowksi_0.png" alt="images">
+          <p class="ourTeam_item__name">IRINA GRABOWSKI</p>
+          <p class="ourTeam_item__pos">LEITERIN EINKAUF</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-5 center">
+        <div class="ourTeam_item">
+          <img class="ourTeam_item__img" src="./src/img/team/christina_weise_0.png" alt="images">
+          <p class="ourTeam_item__name">CHRISTINA WEISE</p>
+          <p class="ourTeam_item__pos">LEITERIN OPERATIONS</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-5 center">
+        <div class="ourTeam_item">
+          <img class="ourTeam_item__img" src="./src/img/team/olaf.png" alt="images">
+          <p class="ourTeam_item__name">OLAF SCHRÖDER</p>
+          <p class="ourTeam_item__pos">TECHNISCHER LEITER</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="paralax paralax-4">
+    <h5 class="title title-orange">ЗАВЖДИ ОРЕНТУЮЧИСЯ НА ПРАВИЛЬНОМУ КУРСІ</h5>
+  </section>
+
+  <section class="section container news" id="OurNews">
+    <div class="row">
+      <div class="col-12 mb-5">
+        <h5 class="title">НОВИНИ З ББГ І ОКЕАНІВ</h5>
+      </div>
+      <div class="col-12 col-lg-8 mb-5">
+        <p class="news_title">
+          01.09.20 Управління без керуючого директора Йоахіма Цеппенфельда
+        </p>
+        <p class="news_text">
+          Йоахім Цеппенфельд, як давно керуючий директор і попередній міноритарний акціонер BBG, перебрав усі акції у попереднього головного акціонера, групи Офен.
+        </p>
+      </div>
+      <div class="col-12 col-lg-8">
+        <p class="news_title">
+          11.12.20 BBG та Harren & Partner об’єднують зусилля
+        </p>
+        <p class="news_subTitle">
+          Bremer Bereederungsgesellschaft (BBG) та Harren & Partner (H&P) поєднують та розширюють свої знання, флоти та мережі у сегменті бункеру. Новий бренд "Harren Bulkers" забезпечує парасольку для цих спільних заходів.
+        </p>
+        <p class="news_text">
+          Bremer Bereederungsgesellschaft та Harren & Partner управлятимуть флотом з 23 балкерських перевезень. Управляючий директор BBG Йоахім Цеппенфельд в захваті від нового альянсу: «Harren & Partner - це сильно диверсифікований сімейний бізнес, який має сильну присутність в сегменті наповнювачів, а також на інших ринках - таких як важкі підйомники, танкери та контейнерні годівниці. Об’єднавши зусилля, ми можемо скористатися нашими спільними знаннями, продовжуючи диверсифікувати та зміцнювати портфель управління судами. BBG буде продовжувати працювати як операційна організація, і наші клієнти та ділові партнери не помітять жодних змін у нашому повсякденному бізнесі ".
+        </p>
+        <p class="news_text">
+          Ці дві компанії прагнуть систематично розширювати та зміцнювати масивний сегмент в довгостроковій перспективі: "BBG та H&P бачать великий потенціал у цій галузі", - пояснив Пітер Гренвольт, керуючий директор Harren & Partner. “Мета - продовжити наше сильне зростання в цьому секторі. Заснування Harren Bulkers - це лише перший крок - той, який закладе основу для придбання нових кораблів і розширення нашого флоту "
+        </p>
+        <p class="news_text">
+          Коріння BBG сягають 1970 року, коли компанія була заснована під назвою «Frigomaris Shipping». Організація вперше спеціалізується на управлінні контейнерними суднами під назвою "Ganymed Shipping", починаючи з 1987 р., Але BBG в основному експлуатує навалочні судна з 2010 р. Флот компанії включає наповнювачі Midi Supramax, Ultramax, Panamax, Post-Panamax та Caper.
+        </p>
+        <p class="news_text">
+          “Я дуже пишаюся і радий, що нам вдалося створити цей новий союз. Це є ще однією віхою в історії Harren & Partner. BBG - це дуже престижна компанія з багаторічною історією та досвідченими працівниками, а також міцною міжнародною репутацією за якість, довіру та досвід у сегменті bulker ”, - прокоментував д-р Мартін Харрен, керуючий директор Harren & Partner. «Тепер, коли Harren & Partner витратив останні кілька років на зміцнення та розширення своїх позицій у сегментах важких підйомників та автоцистерн, ми хочемо продовжувати цей розвиток із наповнювачами. Ми впевнені, що заснування Harren Bulkers поставить і BBG, і Harren & Partner у дуже хороші позиції на майбутнє "
+        </p>
+        <p class="news_text">
+          Патрік Пукалл, керівник відділу фінансування проектів у H&P та генеральний директор Harren Bulkers, вважає, що новий брекменський альянс булкерів є цікавою структурою для інвесторів та власників суден: “Наші професійні операції з управління судами та ефективна фінансова команда роблять нас особливо привабливий партнер для інвесторів. Ми маємо у своєму розпорядженні великі ресурси групи для всього, що ми робимо. Ми будемо творчо, прозоро підходити до кожного нового проекту - і робити його успішним ».
+        </p>
+        <p class="news_text">
+          Для отримання додаткової інформації про Harren Bulkers відвідайте <a href="www.harren-bulkers.de">www.harren-bulkers.de</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="paralax paralax-5"></section>
+
+  <section class="section container workWitUs py-5" id="OurJobs">
+    <div class="row">
+      <div class="col-12">
+        <h5 class="title">РОБОТА В BBG</h5>
+      </div>
+      <div class="col-12 col-md-8">
+        <p class="workWitUs_title mb-2">СТАТИ ЧЛЕНОМ У НАШІЙ КОМПАНІЇ</p>
+        <img src="./src/img/jobs_bbg.jpeg" alt="workWitUs" class="workWitUs_img">
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="./src/img/Wir_bilden_aus_19_20.jpeg" alt="workWitUs" class="workWitUs_img">
+      </div>
+    </div>
+  </section>
+
+  <section class="paralax paralax-6"></section>
+
+  <section class="section container partners py-5" id="OurPartners">
+    <div class="row">
+      <div class="col-12">
+        <h5 class="title">ПАРТНЕР BBG</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mb-5 col-12 col-md-6">
+        <div class="partners_item">
+          <img src="./src/img/partners/logo_conti.gif" alt="" class="partners_item__img">
+          <div class="partners_item__content">
+            <span class="bold">CONTI UNTERNEHMENSGRUPPE</span>
+            <span>Bleichenbrücke 10, 20354 Гамбург, Німеччина</span>
+            <span>Телефон: +49 (0) 40 593536 0</span>
+            <p class="margin">
+              <span>info@conti-shipping.com</span>
+              <span>www.conti-shipping.com</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mb-5 col-12 col-md-6">
+        <p class="partners_text">
+          CONTI-Group - Спільність інновацій та надійності у судноплавній галузі з акцентом на контейнерні судна та вантажоперевезення з 1970 року. Завдяки постійному та успішному розвитку, група CONTI сьогодні є одним із провідних світових суб'єктів міжнародного фінансового співтовариства .
+        </p>
+      </div>
+
+      <div class="mb-5 col-12 col-md-6">
+        <div class="partners_item">
+          <img src="./src/img/partners/logo_qsu.gif" alt="" class="partners_item__img">
+          <div class="partners_item__content">
+            <span class="bold">QSU</span>
+            <span>Йоганнес Кёстер, Ратхаусстр . 25c, 22941 Bargteheide, Німеччина</span>
+            <span>Телефон: +49 4532 288 200, факс: +49 4532 288 20 22</span>
+            <p class="margin">
+              <span>office @ qsu</span>
+              <span>www.qsu.de</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mb-5 col-12 col-md-6">
+        <p class="partners_text">
+          QSU Johannes Koester є партнером BBG щодо впровадження та постійного обслуговування їхньої Системи управління якістю, безпекою та охороною навколишнього середовища, а також морської безпеки відповідно до ISPS-Кодексу з самого початку у 1996 році.
+        </p>
+      </div>
+
+      <div class="mb-5 col-12 col-md-6">
+        <div class="partners_item">
+          <img src="./src/img/partners/logo_ukfm.gif" alt="" class="partners_item__img">
+          <div class="partners_item__content">
+            <span class="bold">UKFM</span>
+            <span>4a Sabanskiy Lane, 65014 Odessa, Ukraine</span>
+            <span>Phone: Сервіс +38 0482 348-658, Fax: Сервіс +38 0482 348-108</span>
+            <p class="margin">
+              <span>crew@ukrferry.com</span>
+              <span>www.ukf-shipmanagement.com</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mb-5 col-12 col-md-6">
+        <p class="partners_text">
+          UKFM, українська корабельна компанія з управління судноплавством "UKRFERRY" в Одесі, є нашим партнером для екіпажу частини BBG - флоту з добре навченими та високомотивованими українськими майстрами / офіцерами, які завжди суворо дотримуються норм ПДНВ та відповідно до останнього технічного стандарту.
+        </p>
+      </div>
+
+      <div class="mb-5 col-12 col-md-6">
+        <div class="partners_item">
+          <img src="./src/img/partners/Logo_ies.jpeg" alt="" class="partners_item__img">
+          <div class="partners_item__content">
+            <span class="bold">МОРСЬКИЙ ГОЛОВНИЙ КАБІНЕТ</span>
+            <span> 3 кв. Вулиця Польна 210; 00-622</span>
+            <span>Телефон Варшави : +48 22 825 35 99; +48 22825 22 75</span>
+            <span>Факс: +48 22 875 94 73</span>
+            <p class="margin">
+              <span>office@iespoland.home.pl</span>
+              <span>www.iespoland.eu</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mb-5 col-12 col-md-6">
+        <p class="partners_text">
+          IES marine є нашим партнером для екіпажу частини BBG - флоту з добре навченими та високомотивованими польськими майстрами / офіцерами, завжди суворо дотримуючись норм STCW та відповідно до останніх технічних стандартів. Вони є нашим діловим партнером з 1995 року.
+        </p>
+      </div>
+
+      <div class="mb-5 col-12 col-md-6">
+        <div class="partners_item">
+          <img src="./src/img/partners/logo_scanmar.png" alt="" class="partners_item__img">
+          <div class="partners_item__content">
+            <span class="bold">SCANMAR</span>
+            <span>Scanmar Maritime Services, Inc., Королівський корпус підприємства</span>
+            <span>2227 Chino Roces Avenue (Pasong Tamo), місто Макаті 1200, Філіппіни</span>
+            <span>Телефон: +63 (0) 2819 1013 до 17 +63 (0) 2 812 1319 до 22, Факс: +63 (0) 2816 7494</span>
+            <p class="margin">
+              <span>info@scanmar.com.ph</span>
+              <span>www.scanmar.com.ph</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mb-5 col-12 col-md-6">
+        <p class="partners_text">
+          Перше, що ви повинні знати про нас, - це наша відданість вам. Ми спеціалісти з питань крюінгу, орієнтовані на обслуговування, прагнучи запропонувати кожному принципалу нашу повну увагу та найвищий рівень знань. Сканмар став одним з найбільших агентів комплектування на Філіппінах. Його репутація доброчесності та забезпечення якості була головним фактором її постійного зростання. Для забезпечення високого рівня обслуговування створена ефективна система управління.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="paralax-7"></section>
+
+  <section class="section container contacts py-5" id="OurContacts">
+    <div class="row">
+      <div class="col-12">
+        <h5 class="title">Контакти</h5>
+      </div>
+      <div class="col-12 col-md-6">
+        <p class="bold">BREMER BEREEDERUNGSGESELLSCHAFT MBH & CO. КГHERMANN-HOLLERITH-STR. 10</p>
+        <p>D-28355 BREMEN</p>
+
+        <p>TEL: +49 421 4686-0</p>
+
+
+        <p>
+          <span>www.bbg-shipmanagement.com</span>
+          <span>info@bbg-shipmanagement.com</span>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <span>Авторське право © 2021 Bremer Bereederungsgesellschaft mbH & Co. КГ</span>
+      </div>
     </div>
   </div>
+</footer>
 
-  <div class="section paralax-3"></div>
-</main>
+<div class="container impressum">
+  <div class="row">
+    <div class="col-12">
+      <h5 class="title">Вихідні данні</h5>
+    </div>
+    <div class="col-12">
+      <p>
+        Bremer Bereederungsgesellschaft mbH & Co. KG
+        Hermann-Hollerith-Str. 10
+        D-28355 Бремен
+      </p>
+
+      <p>
+        Телефон: +49 (0) 421 4686-0
+      </p>
+
+      <p>
+        Керуючий директор:
+        Йоахім Цеппенфельд
+      </p>
+
+      <p>
+        Пошта:  info@bbg-shipmanagement.com
+        Веб:  www.bbg-shipmanagement.com Відповідальний за
+      </p>
+
+      <p>
+        зміст
+        згідно з § 6 MDStV: Йоахім Цеппенфельд
+      </p>
+
+      <p>
+        Реєстраційний суд: Бременський окружний суд
+        Реєстраційний номер: HRA 22917
+        UStIDNr .: DE813631172
+      </p>
+
+      <p>
+        Застереження:
+        Незважаючи на ретельний контроль вмісту, ми не несемо відповідальності за вміст зовнішніх посилань. Оператори сторінок, на які посилаються, несуть повну відповідальність за їх вміст.
+      </p>
+    </div>
+  </div>
+</div>
+
 
   <script src="./src/js/bootstrap.min.js"></script>
   <script src="./src/js/index.js"></script>

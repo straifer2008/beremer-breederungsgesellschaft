@@ -9,12 +9,19 @@
     color: $orange;
     font-weight: 600;
   }
+
+  @media screen and (max-width: 920px) {
+    line-height: 1;
+    font-size: 1.5rem;
+  }
 }
 
 .paralax {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  text-align: center;
+  background-repeat: no-repeat;
   &-2 {
     background-image: url("../img/bbg_parallax_02.jpeg");
     min-height: 220px;
@@ -29,9 +36,43 @@
     min-height: 220px;
     background-color: $blue;
   }
+  &-4 {
+    background-image: url("../img/bbg_parallax_04.jpeg");
+    background-position: center center;
+    background-size: cover;
+    min-height: 220px;
+    background-color: $blue;
+  }
+  &-5 {
+    background-image: url("../img/bbg_bg_parallax_05.jpeg");
+    background-position: center center;
+    background-size: cover;
+    min-height: 220px;
+    background-color: $blue;
+  }
+  &-6 {
+    background-image: url("../img/bbg_parallax_kontakt.jpeg");
+    background-position: center center;
+    background-size: cover;
+    min-height: 220px;
+    background-color: $blue;
+  }
+
+  &-7 {
+    background-image: url("../img/bbg_bg_footer.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 220px;
+    background-color: $blue;
+  }
 }
 
-.main {
+.bold {
+  font-weight: bold;
+}
+
+.body {
   position: relative;
   .header {
     min-height: calc(100vh - 48px);
@@ -39,6 +80,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     &_bgSlider {
       z-index: 0;
       position: absolute;
@@ -91,6 +133,7 @@
         color: $white;
         letter-spacing: 1.5px;
         font-weight: 600;
+        word-break: break-all;
       }
     }
   }
@@ -108,20 +151,47 @@
     align-items: center;
     justify-content: center;
     max-height: 50px;
-    &_container {
+    @media screen and (max-width: 920px) {
+      position: fixed;
+    }
+    .navbar-nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
       max-width: 1140px;
       width: 100%;
+      padding: 3px 0;
     }
 
     &_logo {
       width: auto;
-      max-height: 48px;
+      max-height: 45px;
     }
 
-    a {
+    .navbar {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      &-brand {
+        margin: 0 30px 0 0;
+        padding: 0;
+      }
+
+      &-toggler {
+        border: none;
+        outline: none;
+        box-shadow: none;
+      }
+
+      &-collapse {
+        background-color: $blue;
+      }
+
+      &-nav {
+        width: auto;
+      }
+    }
+    a:not(.navbar-brand) {
       text-decoration: none;
       color: inherit;
       text-transform: uppercase;
@@ -131,94 +201,244 @@
     }
   }
 
-  .section {}
+  .main {
+    .section {}
 
-  .aboutUs {
-    padding: 30px 0 0;
-    &_map {
-      width: 100%;
-      min-width: 100%;
-      height: auto;
-      margin: 0 auto 30px;
+    .aboutUs {
+      padding: 30px 0 0;
+      &_map {
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        margin: 0 auto 30px;
+      }
+
+      &_content {
+        p {
+          margin-bottom: 30px;
+        }
+
+        &__floating {
+          float: right;
+          display: flex;
+          align-items: center;
+          p {
+            text-align: right;
+            font-size: 12.8px;
+            max-width: 210px;
+            margin-right: 10px;
+          }
+          img {
+            max-width: 240px;
+            height: auto;
+          }
+        }
+      }
     }
 
-    &_content {
+    .info {
+      background-image: url("../img/bbg_parallax.jpeg");
+      &_grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-column-gap: 10px;
+        padding: 40px 0;
+        @media screen and (max-width: 920px) {
+          grid-template-columns: repeat(3, 1fr);
+          align-content: center;
+          justify-items: center;
+        }
+        @media screen and (max-width: 920px) {
+          grid-template-columns: 1fr;
+        }
+        &__item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          color: $white;
+          &:hover {
+            img {
+              opacity: 1;
+            }
+          }
+
+          img {
+            position: absolute;
+            max-width: 100%;
+            height: auto;
+            opacity: 0;
+            transition: 250ms ease-in-out opacity;
+          }
+
+          p {
+            text-transform: uppercase;
+            &:first-child {
+              color: $orange;
+              font-size: 35px;
+              font-weight: 600;
+              letter-spacing: -2px;
+            }
+            &:last-child {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .shipDrive {
+      padding: 80px 0;
+      img {
+        max-width: 100%;
+      }
       p {
         margin-bottom: 30px;
       }
+      &_contentImg {
+        max-width: 100%;
+      }
+    }
 
-      &__floating {
-        float: right;
-        display: flex;
-        align-items: center;
-        p {
-          text-align: right;
-          font-size: 12.8px;
-          max-width: 210px;
-          margin-right: 10px;
+    .ourFleet {
+      table {
+        .accordion-button {
+          border: none;
+          outline: none;
+          box-shadow: none;
+          background-color: transparent!important;
+          padding: 0;
         }
-        img {
-          max-width: 240px;
-          height: auto;
+
+        th:not(:first-child, :last-child),
+        td:not(:first-child, :last-child) {
+          @media screen and (max-width: 768px){
+            display: none;
+          }
+        }
+      }
+
+      &_head {
+        background-color: $orange;
+        text-transform: uppercase;
+        color: $blue;
+      }
+
+      &_image {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      &_bgGrey {
+        &>div[class^="col-"] {
+          &:nth-child(4n - 1),
+          &:nth-child(4n) {
+            background-color: #DCDDDE;
+          }
         }
       }
     }
-  }
 
-  .info {
-    background-image: url("../img/bbg_parallax.jpeg");
-    &_grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-column-gap: 10px;
-      padding: 40px 0;
-      &__item {
+    .ourTeam {
+      &_item {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        position: relative;
-        color: $white;
-        &:hover {
-          img {
-            opacity: 1;
-          }
+        &__img {
+          display: block;
+          margin-right: auto;
+          margin-left: auto;
         }
+        &__name {
+          text-align: center;
+          font-weight: 800;
+          margin-top: 1%;
+        }
+        &__pos {
+          text-align: center;
+          font-size: 0.8rem;
+        }
+      }
+    }
 
-        img {
-          position: absolute;
-          max-width: 100%;
+    .news {
+      text-align: justify;
+      &_title {
+        font-weight: bold;
+        font-size: 19px;
+        margin-bottom: 25px;
+      }
+      &_subTitle {
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 20px;
+      }
+      &_text {
+        font-size: 15px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .workWitUs {
+      &_title {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      &_img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .partners {
+      &_item {
+        display: flex;
+        align-items: flex-start;
+        .bold {
+          font-weight: bold;
+        }
+        &__img {
+          max-width: 130px;
+          margin-right: 20px;
+          width: 100%;
           height: auto;
-          opacity: 0;
-          transition: 250ms ease-in-out opacity;
         }
+        &__content {
+          span {
+            display: block;
+            margin-bottom: 5px;
+          }
 
-        p {
-          text-transform: uppercase;
-          &:first-child {
-            color: $orange;
-            font-size: 35px;
-            font-weight: 600;
-            letter-spacing: -2px;
+          .margin {
+            margin-top: 30px;
           }
-          &:last-child {
-            font-size: 15px;
-          }
+        }
+      }
+    }
+
+    .contacts {
+      color: $blue;
+      font-size: 15px;
+      p {
+        margin-bottom: 30px;
+        span {
+          display: block;
         }
       }
     }
   }
 
-  .shipDrive {
-    padding: 80px 0;
-    img {
-      max-width: 100%;
-    }
-    p {
-      margin-bottom: 30px;
-    }
-    &_contentImg {
-      max-width: 300px !important;
-    }
+  .footer {
+    display: flex;
+    font-size: 9px;
+    background-color: $blue;
+    color: $white;
+    padding: 10px 0;
+  }
+
+  .impressum {
+    white-space: pre-line;
   }
 }
