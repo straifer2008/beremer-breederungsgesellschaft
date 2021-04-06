@@ -59,6 +59,9 @@ a:hover {
   background-color: #001D49;
 }
 .paralax-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("../img/bbg_parallax_04.jpeg");
   background-position: center center;
   background-size: cover;
